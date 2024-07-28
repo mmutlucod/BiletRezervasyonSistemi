@@ -1,0 +1,196 @@
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ ticket.description }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="ticket.iconUrl" alt="yüklenemedi" />
+  <mat-card-content>
+    <p>
+      {{ ticket.longDescription }}
+    </p>
+  </mat-card-content>
+  <div _ngcontent-act-c191="" class="ng-star-inserted">
+   
+    Rezervasyon kaydınız 1 gün içinde kullanılabilir.
+  </div>
+  <mat-card-actions>
+    <button mat-button>Detaylı İnceleme</button>
+  </mat-card-actions>
+</mat-card>
+
+<div
+  _ngcontent-bks-c191=""
+  class="ticket-detail-search-box-container mat-elevation-z3"
+>
+  
+  <div
+    _ngcontent-bks-c191=""
+    class="ticket-field-container ng-untouched ng-pristine ng-valid"
+  >
+  
+
+  <h2>Ödenecek Tutar:</h2>
+  <div class="portal">
+    <ng-template   *ngIf=" this.sonuc > 0;  "  [cdkPortalOutlet]="selectedPortal"></ng-template>
+  </div>
+  <ng-template #templatePortalContent
+    >{{ this.sonuc | currency }}
+    <a
+      class="btn"
+      value="↓"
+      routerLink="/Anasayfa/Secenek/Secim/Rezervasyon/Payment/{{ticket.id}}"
+    >
+      Devam
+    </a></ng-template
+  >
+    <button
+      class="btn"
+      (click)="isOpen = !isOpen"
+      type="button"
+      cdkOverlayOrigin
+      #trigger="cdkOverlayOrigin"
+    >
+      {{ isOpen ? "Seç" : "Seç" }}
+    </button>
+
+    <ng-template
+      cdkConnectedOverlay
+      [cdkConnectedOverlayOrigin]="trigger"
+      [cdkConnectedOverlayOpen]="isOpen"
+    >
+      <div
+        id="cdk-overlay-3"
+        class="cdk-overlay-pane"
+        style="pointer-events: auto; bottom: 491.825px; right: 43.2px"
+      >
+        <div _ngcontent-kje-c186="" class="ng-star-inserted"></div>
+        <form
+          _ngcontent-kje-c186=""
+          novalidate=""
+          class="ng-untouched ng-pristine ng-valid ng-star-inserted"
+        >
+          <div
+            _ngcontent-kje-c186=""
+            class="adult-children-panel-container mat-elevation-z3"
+          >
+            <div _ngcontent-kje-c186="" class="adult-children-panel">
+              <!---->
+
+              <div
+                _ngcontent-kje-c186=""
+                class="add-children-panel-row ng-star-inserted"
+              >
+                <label _ngcontent-kje-c186="">Yetişkin</label
+                ><button
+                  _ngcontent-kje-c186=""
+                  type="button"
+                  mat-mini-fab=""
+                  color="accent"
+                  class="mat-focus-indicator mat-mini-fab mat-button-base mat-accent"
+                >
+                  <span class="mat-button-wrapper">-</span>
+                  <div
+                    matripple=""
+                    class="mat-ripple mat-button-ripple mat-button-ripple-round"
+                  ></div>
+                  <div class="mat-button-focus-overlay"></div></button
+                ><input
+                  aria-label="input"
+                  _ngcontent-kje-c186=""
+                  formcontrolname="adultCount"
+                  tacoredigitonly=""
+                  class="add-children-panel-input ng-untouched ng-pristine ng-valid"
+                  [(ngModel)]="deger1"
+                  name="something"
+                /><button
+                  _ngcontent-kje-c186=""
+                  type="button"
+                  mat-mini-fab=""
+                  color="accent"
+                  class="mat-focus-indicator mat-mini-fab mat-button-base mat-accent"
+                >
+                  <span class="mat-button-wrapper">+</span>
+                  <div
+                    matripple=""
+                    class="mat-ripple mat-button-ripple mat-button-ripple-round"
+                  ></div>
+                  <div class="mat-button-focus-overlay"></div>
+                </button>
+              </div>
+              <!---->
+              <div
+                _ngcontent-kje-c186=""
+                class="add-children-panel-row ng-star-inserted"
+              >
+                <label _ngcontent-kje-c186="">Çocuk</label
+                ><button
+                  _ngcontent-kje-c186=""
+                  type="button"
+                  mat-mini-fab=""
+                  color="accent"
+                  class="mat-focus-indicator mat-mini-fab mat-button-base mat-accent"
+                >
+                  <span class="mat-button-wrapper">-</span>
+                  <div
+                    matripple=""
+                    class="mat-ripple mat-button-ripple mat-button-ripple-round"
+                  ></div>
+                  <div class="mat-button-focus-overlay"></div></button
+                ><input
+                  aria-label="input"
+                  _ngcontent-kje-c186=""
+                  formcontrolname="childCount"
+                  tacoredigitonly=""
+                  class="add-children-panel-input ng-untouched ng-pristine ng-valid"
+                  [(ngModel)]="deger2"
+                  name="something"
+                /><button
+                  _ngcontent-kje-c186=""
+                  type="button"
+                  mat-mini-fab=""
+                  color="accent"
+                  class="mat-focus-indicator mat-mini-fab mat-button-base mat-accent"
+                >
+                  <span class="mat-button-wrapper">+</span>
+                  <div
+                    matripple=""
+                    class="mat-ripple mat-button-ripple mat-button-ripple-round"
+                  ></div>
+                  <div class="mat-button-focus-overlay"></div>
+                </button>
+              </div>
+          
+              <div
+                _ngcontent-kje-c186=""
+                class="add-children-panel-row ng-star-inserted"
+              >
+                <button
+                  (click)="getHesapla()"  
+                  (click)="selectedPortal = templatePortal" 
+                  (click)="isOpen = !isOpen"  
+                  cdkOverlayOrigin
+                  #trigger="cdkOverlayOrigin"
+                  _ngcontent-kje-c186=""
+                  mat-raised-button=""
+                  color="primary"
+                  class="mat-focus-indicator apply-button mat-raised-button mat-button-base mat-primary"
+                >
+                  <span class="mat-button-wrapper">Uygula</span>
+                  <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                  <div class="mat-button-focus-overlay"></div>
+                </button>
+                <ng-template 
+                  cdkConnectedOverlay
+                  [cdkConnectedOverlayOrigin]="trigger"
+                  [cdkConnectedOverlayOpen]="isOpen"
+                ></ng-template>
+              </div>
+              
+            </div>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </div>
+</div>

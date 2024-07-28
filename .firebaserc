@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "biletdemo-86ea1": {
+      "hosting": {
+        "bilet": [
+          "biletdemo-86ea1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "biletdemo-86ea1"
+  }
+}

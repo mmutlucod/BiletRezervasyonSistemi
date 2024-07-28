@@ -1,0 +1,35 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      <div class="card" *ngFor="let ticket of tickets |async ">
+
+        <img class="resim" alt="yüklenemedi" [src]="ticket.iconUrl ">
+
+        <div class="başlık">
+         {{ticket.description }}
+        </div>
+        <div class="acıklama">
+          {{ticket.longDescription }}
+        </div>
+        
+        
+        <a class="btn"  value="↓"  routerLink="/Anasayfa/Secenek/{{ticket.id}}">
+          İncele
+        </a>
+          
+        
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!--div1Function(id){
+  let x = 'ticket_' + id;
+document.getElementById(x).style.display = "block";
+  this.div1=true;-->

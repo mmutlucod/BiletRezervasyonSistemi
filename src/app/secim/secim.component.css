@@ -1,0 +1,266 @@
+/*! CSS Used from: https://www.biletantalya.com/styles.5919b28c0a11bbc777dd.css */
+.ticket-list-category-name {
+  background-color: var(--a-c-5);
+  color: var(--a-c-5-contrast);
+}
+/*! CSS Used from: Embedded */
+.ticket-list-category-name[_ngcontent-oex-c171] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 12px;
+}
+/*! CSS Used from: https://www.biletantalya.com/styles.5919b28c0a11bbc777dd.css */
+.mat-raised-button {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mat-card {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+.mat-card-content {
+  font-size: 14px;
+}
+.mat-ripple {
+  overflow: hidden;
+  position: relative;
+}
+.mat-button-focus-overlay {
+  background: #000;
+}
+.mat-raised-button {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+}
+.mat-raised-button.mat-accent {
+  color: var(--a-c-5-contrast);
+}
+.mat-raised-button.mat-accent {
+  background-color: var(--a-c-5);
+}
+.mat-raised-button:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.mat-raised-button:not([disabled]):active:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.mat-card {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.87);
+}
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.ticket-catgory-list .ticket-category-card-prices .hotel-advisor-h3 {
+  color: #000;
+}
+/*! CSS Used from: Embedded */
+.mat-raised-button {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mat-card {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+.mat-card-content {
+  font-size: 14px;
+}
+.mat-ripple {
+  overflow: hidden;
+  position: relative;
+}
+button.mat-raised-button.mat-accent:not([disabled]):hover {
+  transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  background-color: var(--a-c-7);
+}
+.hotel-advisor-h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+/*! CSS Used from: Embedded */
+.mat-raised-button {
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+  transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mat-raised-button::-moz-focus-inner {
+  border: 0;
+}
+.mat-raised-button::-moz-focus-inner {
+  border: 0;
+}
+.mat-button-ripple.mat-ripple,
+.mat-button-focus-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.mat-button-focus-overlay {
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0.35, 0, 0.25, 1),
+    background-color 200ms cubic-bezier(0.35, 0, 0.25, 1);
+}
+/*! CSS Used from: Embedded */
+.mat-card {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
+  padding: 16px;
+  border-radius: 4px;
+}
+.mat-card-content {
+  display: block;
+  margin-bottom: 16px;
+}
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: 0 -16px 16px -16px;
+}
+.mat-card > :first-child,
+.mat-card-content > :first-child {
+  margin-top: 0;
+}
+.mat-card > :last-child:not(.mat-card-footer),
+.mat-card-content > :last-child:not(.mat-card-footer) {
+  margin-bottom: 0;
+}
+.mat-card-image:first-child {
+  margin-top: -16px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+/*! CSS Used from: Embedded */
+.ticket-catgory-list[_ngcontent-bks-c171] {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+@media (max-width: 599.99px) {
+  .ticket-catgory-list[_ngcontent-bks-c171] {
+    grid-template-columns: 1fr;
+  }
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171] {
+  max-width: 380px;
+  min-width: 320px;
+  margin-bottom: 15px;
+  border: 1px solid #cecccc;
+}
+@media (max-width: 599.99px) {
+  .ticket-catgory-list[_ngcontent-bks-c171]
+    .ticket-category-card[_ngcontent-bks-c171] {
+    max-width: unset;
+    min-width: unset;
+    margin-right: 0;
+  }
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-description[_ngcontent-bks-c171] {
+  max-height: 100px;
+  overflow: hidden;
+  padding-right: 8px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-description[_ngcontent-bks-c171]::-webkit-scrollbar {
+  border-radius: 10px;
+  height: 10px;
+  width: 8px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-description[_ngcontent-bks-c171]::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-description[_ngcontent-bks-c171]::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-description[_ngcontent-bks-c171]:hover {
+  padding-right: 0;
+  overflow-y: scroll;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .mat-card-image[_ngcontent-bks-c171] {
+  height: 240px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .mat-card-content[_ngcontent-bks-c171] {
+  min-height: 140px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-card-bottom[_ngcontent-bks-c171] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+  margin-bottom: -8px;
+  min-height: 50px;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-card-bottom[_ngcontent-bks-c171]
+  .ticket-category-card-prices[_ngcontent-bks-c171] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.ticket-catgory-list[_ngcontent-bks-c171]
+  .ticket-category-card[_ngcontent-bks-c171]
+  .ticket-category-card-bottom[_ngcontent-bks-c171]
+  .ticket-category-card-prices[_ngcontent-bks-c171]
+  .ticket-category-card-price[_ngcontent-bks-c171] {
+  font-weight: 700;
+}

@@ -1,0 +1,144 @@
+
+.header-bottom-container {
+  background-color: var(--p-c-5);
+  color: var(--p-c-5-contrast);
+}
+/*! CSS Used from: Embedded */
+
+
+
+.mat-ripple {
+  overflow: hidden;
+  position: relative;
+}
+.hotel-advisor-container {
+  display: grid;
+}
+@media (max-width: 959.99px) {
+  .hotel-advisor-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (min-width: 960px) {
+  .hotel-advisor-container {
+    grid-template-columns: auto 900px auto;
+  }
+}
+@media (min-width: 1280px) {
+  .hotel-advisor-container {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+.hotel-advisor-container > * {
+  grid-column: 2;
+}
+/*! CSS Used from: Embedded */
+.mat-button .mat-button-focus-overlay,
+.mat-icon-button .mat-button-focus-overlay {
+  opacity: 0;
+}
+.mat-button:hover .mat-button-focus-overlay {
+  opacity: 0.04;
+}
+@media (hover: none) {
+  .mat-button:hover .mat-button-focus-overlay {
+    opacity: 0;
+  }
+}
+@media (max-width: 959.99px) {
+  .header
+    .header-bottom-container
+    .header-bottom
+    .header-bottom-left
+    .header-logo
+    a {
+    margin-left: 10px;
+  }
+}
+.header .header-bottom-container .header-bottom .header-bottom-right,
+.header
+  .header-bottom-container
+  .header-bottom
+  .header-bottom-right
+  .header-bottom-right-sign {
+  display: -ms-flexbox;
+  display: flex;
+}
+.header
+  .header-bottom-container
+  .header-bottom
+  .header-bottom-right
+  .header-bottom-right-sign
+  .header-login-menu {
+  border-right: 1px solid #eee;
+  padding: 0 5px;
+}
+.header
+  .header-bottom-container
+  .header-bottom
+  .header-bottom-right
+  .header-bottom-right-sign
+  .header-login-menu
+  .login-router-link {
+  padding: 0;
+  font-size: 15px;
+}
+.header
+  .header-bottom-container
+  .header-bottom
+  .header-bottom-right
+  .header-bottom-right-sign
+  .basket-button
+  fa-icon.ng-fa-icon {
+  font-size: 20px;
+}
+
+.header {
+  width: 100%;
+}
+.header a:active,
+.header a:hover,
+.header a:link,
+.header a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.header .header-bottom-container {
+  padding: 5px 0;
+}
+.header .header-bottom-container .header-bottom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header
+  .header-bottom-container
+  .header-bottom
+  .header-bottom-left
+  .header-logo
+  a {
+  font-size: 20px;
+  font-weight: 500;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.header
+  .header-bottom-container
+  .header-bottom
+  .header-bottom-left
+  .header-logo
+  a
+  .standartLogo {
+  height: 40px;
+}

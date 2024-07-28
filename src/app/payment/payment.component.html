@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satış Formu</title>
+    <link rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h2>BİLGİLER</h2>
+
+      <form action="" method="post">
+        <h4>Hesap</h4>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="text" placeholder="İsim" required class="name"   [(ngModel)]="ticketDetails.isim"   name="isim"/>
+            <i class="fa fa-user icon"></i>
+          </div>
+          <div class="input_box">
+            <input
+              type="text"
+              placeholder="Kart Üzerindeki İsim"
+              required
+              class="name"
+            />
+            <i class="fa fa-user icon"></i>
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="email" placeholder="Email A" required class="name"  [(ngModel)]="ticketDetails.mail" name="isim"/>
+            <i class="fa fa-envelope icon"></i>
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="text" placeholder="Adres" required class="name"  [(ngModel)]="ticketDetails.adres" name="isim"/>
+            <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="text" placeholder="Şehir" required class="name" />
+            <i class="fa fa-institution icon"></i>
+          </div>
+        </div>
+        
+        <h3 _ngcontent-bks-c191="" class="ticket-detail-description-label">
+          Tarih Seçimi
+        </h3>
+        <mat-form-field appearance="fill">
+          <mat-label>Gün Seçiniz..</mat-label>
+          <input  aria-label="Tarih" matInput [matDatepicker]="tarih" [(ngModel)]="ticketDetails.rezTarih"  #ctrl="ngModel" name="tarih"/>
+          <mat-hint>AA/GG/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="tarih"></mat-datepicker-toggle>
+          <mat-datepicker #tarih></mat-datepicker> </mat-form-field
+        ><!----><!----><!---->
+       
+        <div class="input_group">
+          <div class="input_box">
+            <h4>Doğum Tarihi</h4>
+            <mat-form-field appearance="fill">
+              <mat-label>Doğum Tarihi Giriniz..</mat-label>
+              <input aria-label="Doğum Tarihi" matInput [matDatepicker]="tarih1">
+              <mat-hint>AA/GG/YYYY</mat-hint>
+              <mat-datepicker-toggle matSuffix [for]="tarih1"></mat-datepicker-toggle>
+              <mat-datepicker #tarih1></mat-datepicker>
+            </mat-form-field>
+          
+          </div>
+
+          <div class="input_box">
+            <h4>Cinsiyet</h4>
+            <input type="radio" name="cinsiyet" class="radio" id="b1" checked />
+            <label for="b1">Erkek</label>
+            <input type="radio" name="cinsiyet" class="radio" id="b2" />
+            <label for="b2">Kadın</label>
+          </div>
+
+          
+        </div>
+     
+
+        <div class="input_group">
+          <div class="input_box">
+            <button (click)="ode(ticket.fiyat)" (click)="add()" type="submit">Bilgileri Onayla</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<div></div>
+<!-- <div *ngIf = 'tcKontrolFonk()'> <p> 
+      'Tc kimlik no geçerli:'  
+    </p> </div>
+    <div *ngIf = "!tcKontrolFonk">
+       <p>S
+      'geçersiz tc'
+    </p>
+    </div> -->
+
+<!-- <button class="buy" (click)="siteyeGit()">SATIN ALMAYA GİT </button> -->
+
+<!-- normal fiyat direkt yazsın tc doğru girilirse indirimli fiyat çıksın -->
+

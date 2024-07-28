@@ -1,0 +1,49 @@
+<div _ngcontent-oex-c171="" class="ng-star-inserted">
+  <h2 *ngIf="ticket" _ngcontent-oex-c171="" class="ticket-list-category-name">
+    {{ ticket.description }}
+  </h2>
+</div>
+<div _ngcontent-bks-c171="" class="ticket-catgory-list ng-star-inserted">
+  <mat-card
+    _ngcontent-bks-c171=""
+    class="mat-card mat-focus-indicator ticket-category-card ng-star-inserted"
+    ><img
+      _ngcontent-bks-c171=""
+      mat-card-image=""
+      class="mat-card-image"
+      [src]="ticket.iconUrl"
+      alt="{{ticket.description}} Günlük Giriş" /><mat-card-content
+      _ngcontent-bks-c171=""
+      class="mat-card-content"
+      ><h2 _ngcontent-bks-c171="">{{ticket.description}} Günlük Giriş</h2>
+      <p _ngcontent-bks-c171="" class="ticket-category-description">
+        {{ticket.longDescription}}
+      </p></mat-card-content
+    >
+    <div _ngcontent-bks-c171="" class="ticket-category-card-bottom">
+      <!---->
+      <div _ngcontent-bks-c171="" class="ticket-category-card-prices">
+        <div _ngcontent-bks-c171=""><!----></div>
+        <div _ngcontent-bks-c171="" class="ticket-category-card-price">
+          <span
+            _ngcontent-bks-c171=""
+            class="hotel-advisor-h3 ng-star-inserted"
+          >
+           {{ticket.fiyat | currency}}</span
+          >
+        </div>
+      </div>
+      <div _ngcontent-bks-c171="">
+        <button  (click)="onSelect()"
+          _ngcontent-bks-c171=""
+          mat-raised-button=""
+          color="accent"
+          class="mat-focus-indicator mat-raised-button mat-button-base mat-accent"
+        >
+          <span class="mat-button-wrapper"> Detay </span>
+          <div matripple="" class="mat-ripple mat-button-ripple"></div>
+          <div class="mat-button-focus-overlay"></div>
+        </button>
+      </div></div></mat-card
+  >
+</div>
